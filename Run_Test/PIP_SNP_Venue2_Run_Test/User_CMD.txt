@@ -1,0 +1,16 @@
+Step 1) ./PIP_SNP_V2 -U
+Hello, Dear User! Welcome to use SNP Processing Pipeline for LD Bin Filling, Missing Genotype Imputing, and/or Marker Synthesizing!
+Welcome to use this program to do LD Marker Bin Detecting
+The usuage of input parameter arguments are listed as followings:
+-u or -U: Output this help usuage message
+-g or -G: The full name of Genotype file
+-l or -L: The full name of LD Bin Mapping Result file
+-i or -I: The Individual number
+-c or -C: the  Correlation Method for a Pairwise Genotypic Markers, 0: Pearson_Correlation_R2; 1: LD_D_R2; Default(>=2): Pearson_Correlation_R2
+-k or -K: the  K Nearest Neighbor individuals in The KNN method 
+-s or -S: the method how to generate the syntesized(binned) genotypic marker, 0: not to synthesize; 1: norm integration of the multiple markers' genotype values; 2: select the optimal one; default(>2): norm integration   
+-o or -O: the  full name of Imputing results
+-m or -M: the  full name of LD Mapping results after synthesing
+
+Step 2.) ./PIP_SNP_V2 -g ./SNP_Data_Example.txt -l ./LD_Bin_Map.txt -o PIP_SNP.txt -m ./Synthesis_Map.txt -i 278 -c 0 -k 10 -s 1
+

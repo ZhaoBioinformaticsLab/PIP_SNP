@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Deep_Synthesis" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DeepSynthesis" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-g ./bin/Release/Pip_Propressed_SNP.csv -l ./bin/Release/Pip_LD_Map.csv -i 278 -c 0 -r 0.8 -s 2 -o ./bin/Release/DS_SNP.csv -m ./bin/Release/DS_Map.csv" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DeepSynthesis" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-g ./Test_Data/Propressed_SNP.csv -l ./Test_Data/LD_Map.csv -i 132 -c 0 -r 0.2 -s 0 -o ./Test_Result/DS_SNP.csv -m ./Test_Result/DS_Map.csv" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="CDeepSynthesiseBin.cpp" />
+		<Unit filename="CDeepSynthesiseBin.h" />
+		<Unit filename="Common.cpp" />
+		<Unit filename="Common.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

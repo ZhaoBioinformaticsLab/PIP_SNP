@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1586109096 source:/home/wezhang/Desktop/External Data/Source Code_PIP_SNP/Deep_Synthesis/Common.cpp
+	<vector>
+	<math.h>
+	"Common.h"
+
+1585954803 /home/wezhang/Desktop/External Data/Source Code_PIP_SNP/Deep_Synthesis/Common.h
+	<vector>
+	<algorithm>
+
+1586118360 source:/home/wezhang/Desktop/External Data/Source Code_PIP_SNP/Deep_Synthesis/main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<vector>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctime>
+	<cstddef>
+	<assert.h>
+	"Common.h"
+	"CDeepSynthesiseBin.h"
+
+1585515352 /home/wezhang/Desktop/External Data/Source Code_PIP_SNP/Deep_Synthesis/CDeepSynthesiseBin.h
+	<vector>
+	"Common.h"
+
+1585677325 source:/home/wezhang/Desktop/External Data/Source Code_PIP_SNP/Deep_Synthesis/CDeepSynthesiseBin.cpp
+	"CDeepSynthesiseBin.h"
+	<vector>
+	<assert.h>
+	<math.h>
+	<iostream>
+	<cfloat>
+

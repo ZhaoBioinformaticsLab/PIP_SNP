@@ -1,0 +1,17 @@
+Step 1.) ./DeepSynthesis -u
+Hello, Dear User! To furrther  reduce the SNP size, we develop such specific program to deep synthesis SNP Bins by considering the correlationship of a SNP and its neighbor jumped SNP Bins!
+Welcome to use this program to do Deep Synthesising
+The usuage of input parameter arguments are listed as followings:
+-u or -U: Output this help usuage message
+-g or -G: The full name of inputing Synthesised SNP file
+-l or -L: The full name of inputting  LD Bin file Mapping Synthesising SNPs  
+-i or -I: The Individual number
+-c or -C: The Method for the pairwise R2 Correlation, 0:Pearson_Correlation_R2; 1: LD_D_R2; Default(>2): Pearson_Correlation_R2 
+-r or -R: The Threshold for the pairwise R2 Threshold, a float value (0~1.0)
+-s or -S: The Method for the multiple SNP bin Synthesising, 1: norm integration of the multiple markers' genotype values; 2: select the optimal one; Default(0, 0r >2) :norm integration of the multiple markers' genotype values  
+-o or -O: The full name of Deep Synthesised SNP results
+-m or -M: The full LD Bin mapping file name after deep synthesising
+
+
+Step 2.) ./DeepSynthesis -g ./Propressed_SNP.csv -l ./LD_Map.csv -i 132 -c 0 -r 0.2 -s 2 -o ./DS_SNP.txt -m ./DS_Map.txt
+
